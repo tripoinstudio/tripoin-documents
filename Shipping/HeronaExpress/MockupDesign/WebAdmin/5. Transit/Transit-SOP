@@ -1,0 +1,21 @@
+Proses Transit adalah pada saat barang telah sampai kantor cabang selama proses pengiriman.
+petugas kantor cabang, akan mengecek barang menggunakan QRCODE dalam barang dan data dalam database.
+Field yang akan dicek adalah :
+		- Isi
+		- Tujuan pengiriman : input alamat, sama dengan alamat penerima
+		- Berat ( kg )
+		- Dimensi ( p x l x t )
+		- Kategori : benda mati ( kering/ basah ) / benda hidup ( hewan/ tumbuhan )
+		- Jenis : durable, non - durable
+		- Pilihan service : ( ex : SS, YES, REGULER, INTACITY, KARGO, OKE dll. )
+		- Pilihan garansi : bergaransi/ non garansi
+		- Tanggal berangkat ( estimated )
+		- Tanggal tiba ( estimated )			
+		- Biaya pengiriman
+				
+Set status barang : ON_TRANSIT
+
+Setelah barang selesai cek transit, 
+jika kloter pengiriman tersedia, maka barang akan segera dikirim. set status : ON_PROCESS
+Jika kloter pengiriman tidak tersedia, maka barang akan dimasukkan dalam daftar urutan pengiriman pada 
+kloter selanjutnya.

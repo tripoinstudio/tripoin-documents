@@ -1,0 +1,3 @@
+Barang dengan status ON_RECEIVE_DESTINATION yang telah dikirim ke alamat tujuan, akan dicek oleh penerima 
+melalui form penerimaan barang. petugas pengirim dapat mengupdate status pengiriman menjadi DELIVERED. atau 
+pengubahan status ini dapat dilakukan di kantor cabang RECEIVE_ON_DESTINATION 

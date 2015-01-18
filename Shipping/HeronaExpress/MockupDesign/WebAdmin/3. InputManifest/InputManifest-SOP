@@ -1,0 +1,24 @@
+Input Manifest adalah proses serah terima dari petugas kantor cabang ke petugas bagging. 
+Petugas bagging melakukan pengecekan kondisi barang berdasarkan  : 	
+	- QRCODE
+	- Fisik/ Real barang
+	- Daftar checklist QRCODE :
+		- Isi
+		- Tujuan pengiriman : input alamat, sama dengan alamat penerima
+		- Berat ( kg )
+		- Dimensi ( p x l x t )
+		- Kategori : benda mati ( kering/ basah ) / benda hidup ( hewan/ tumbuhan )
+		- Jenis : durable, non - durable
+		- Pilihan service : ( ex : SS, YES, REGULER, INTACITY, KARGO, OKE dll. )
+		- Pilihan garansi : bergaransi/ non garansi
+		- Tanggal berangkat ( estimated )
+		- Tanggal tiba ( estimated )			
+		- Biaya pengiriman
+		
+	- Simpan data kedalam Tabel Manifest
+	
+	Jika sebelum cut-off, maka barang akan dikirim pada kloter pengiriman yang tersedia. set status barang : ON_PROCESS
+	Jika setelah cut-off, maka barang akan disimpan dalam gudang sementara.
+	
+Keterangan :
+	- cut-off : 12.00 AM 

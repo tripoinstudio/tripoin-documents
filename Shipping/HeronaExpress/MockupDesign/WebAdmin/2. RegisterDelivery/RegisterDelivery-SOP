@@ -25,6 +25,14 @@ yang telah melalui proses packaging dan mencatat barang yang akan dikirim dengan
 		- Biaya pengiriman		
 	Pembayaran :
 		- Cash / Non - cash
-Setelah pencatatan selesai, maka aplikasi akan membuat report :
+		
+	Simpan data kedalam tabel RegisterDelivery  
+	
+Setelah pencatatan selesai, 
+	maka aplikasi akan membuat report :
+	- QRCODE untuk barang yang telah dicatat
 	- Resi pengiriman 1: untuk dokumentasi customer
 	- Resi pengiriman 2: untuk dokumentasi kantor cabang
+	- Surat jalan untuk barang yang akan dikirimkan
+	
+	Barang yang telah dipacking akan diberi label QRCODE dan status barang : ON_MANIFEST

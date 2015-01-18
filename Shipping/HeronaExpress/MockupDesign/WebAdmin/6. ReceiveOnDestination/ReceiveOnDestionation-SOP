@@ -1,0 +1,20 @@
+Process ReceiveOnDestionation adalah proses dimana barang transit telah sampai di kota tujuan. untuk memastikan 
+kota yang dituju sesuai dengan dokumen, maka petugas harus melakukan pengecekan data dalam QRCODE dan data
+dalam database. Field yang akan dicek adalah :
+		- Isi
+		- Tujuan pengiriman : input alamat, sama dengan alamat penerima
+		- Berat ( kg )
+		- Dimensi ( p x l x t )
+		- Kategori : benda mati ( kering/ basah ) / benda hidup ( hewan/ tumbuhan )
+		- Jenis : durable, non - durable
+		- Pilihan service : ( ex : SS, YES, REGULER, INTACITY, KARGO, OKE dll. )
+		- Pilihan garansi : bergaransi/ non garansi
+		- Tanggal berangkat ( estimated )
+		- Tanggal tiba ( estimated )			
+		- Biaya pengiriman
+		
+		Kantor cabang penerima akan mencetak form penerimaan untuk selanjutnya ditandatangani oleh penerima.
+		set status barang : ON_RECEIVE_DESTINATION
+		
+Jika pengecekan sesuai, maka barang akan diproses untuk pengiriman ke alamat penerima. 
+jika tidak sesuai, maka akan dilakukan klarifikasi ke kantor pengirim.
