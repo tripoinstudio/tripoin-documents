@@ -1,11 +1,30 @@
-Register packaging adalah proses pendaftaran packaging barang customer. 
-Bisa melalui telefon, online(web customer) registration maupun langsung ke kantor cabang.
-	- Melalui telefon: customer menelfon kantor cargo untuk mendaftarkan barang, 
-						kemudian customer service mencatat :
-							- Isi kiriman
-							- Tujuan pengiriman
-							- Alamat packaging
-							- Biaya packaging dan delivery
-							- Menawarkan dan memilih schedule packaging
-							- Simpan ke tabel RegisterPackaging	
-	- Melaui kantor cabang : proses yang sama hanya saja tanpa ada schedule packaging
+Register delivery adalah proses pencatatan barang yang telah melalui proses packaging untuk dikirim. 
+Proses ini harus dikerjakan di kantor cabang. Petugas akan mengecek keadaan barang (berdasarkan SOP cek barang ) 
+yang telah melalui proses packaging dan mencatat barang yang akan dikirim dengan field sbb:
+	Identitas pengirim :
+		- Nama
+		- No.Identitas
+		- Alamat
+		- No. Telefon		
+	Identitas penerima :
+		- Nama
+		- No.Identitas
+		- Alamat
+		- No. Telefon
+	Identitas barang :
+		- Isi
+		- Tujuan pengiriman : input alamat, sama dengan alamat penerima
+		- Berat ( kg )
+		- Dimensi ( p x l x t )
+		- Kategori : benda mati ( kering/ basah ) / benda hidup ( hewan/ tumbuhan )
+		- Jenis : durable, non - durable
+		- Pilihan service : ( ex : SS, YES, REGULER, INTACITY, KARGO, OKE dll. )
+		- Pilihan garansi : bergaransi/ non garansi
+		- Tanggal berangkat ( estimated )
+		- Tanggal tiba ( estimated )			
+		- Biaya pengiriman		
+	Pembayaran :
+		- Cash / Non - cash
+Setelah pencatatan selesai, maka aplikasi akan membuat report :
+	- Resi pengiriman 1: untuk dokumentasi customer
+	- Resi pengiriman 2: untuk dokumentasi kantor cabang
