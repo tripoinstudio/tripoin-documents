@@ -1,0 +1,11 @@
+Register packaging adalah proses pendaftaran packaging barang customer. 
+Bisa melalui telefon, online(web customer) registration maupun langsung ke kantor cabang.
+	- Melalui telefon: customer menelfon kantor cargo untuk mendaftarkan barang, 
+						kemudian customer service mencatat :
+							- Isi kiriman
+							- Tujuan pengiriman
+							- Alamat packaging
+							- Biaya packaging dan delivery
+							- Menawarkan dan memilih schedule packaging
+							- Simpan ke tabel RegisterPackaging	
+	- Melaui kantor cabang : proses yang sama hanya saja tanpa ada schedule packaging
